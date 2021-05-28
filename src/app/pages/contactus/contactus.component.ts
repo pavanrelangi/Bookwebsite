@@ -11,8 +11,5 @@ export class ContactusComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // contact(res: any) {
-  //   console.log('enrollement data', res);
-  //   alert(res)
-  // }
+
 }
