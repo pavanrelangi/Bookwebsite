@@ -22,5 +22,7 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+add(){
+  alert("Added successfully")
+}
 }
