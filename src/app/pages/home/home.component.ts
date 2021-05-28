@@ -7,7 +7,7 @@ import { BookService } from 'src/app/service/book.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  pricetype:string="All";
   books:any;
   constructor(private bs:BookService) { 
       this.bs.getBook().subscribe(

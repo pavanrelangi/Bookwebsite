@@ -4,8 +4,11 @@
            <img src="http://localhost:8090/{{book.image}}">
        </div>   
   <div class="default">
-        <h5 style="text-align: center;text-shadow: 2px 2px 2px gray;">Name:{{book.name}}</h5>
-        <h5 style="text-align: center;text-shadow: 2px 2px 2px gray;">price:{{book.price}}</h5>
+   
+        <h5 style="text-align: center;text-shadow: 2px 2px 2px gray;">Name:{{book.name| uppercase}}</h5>
+        <h5 style="text-align: center;text-shadow: 2px 2px 2px gray;"> 
+             <span style="color:darkred;">({{book.price| discount |currency:"INR"}})</span>
+            (<del>   {{book.price|currency:'INR'}} </del>)</h5>
         <h5 style="text-align: center;text-shadow: 2px 2px 2px gray;">Author:{{book.author}}</h5>
 
 

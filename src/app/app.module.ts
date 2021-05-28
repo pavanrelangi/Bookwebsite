@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DetailsComponent } from './pages/home/details/details.component';
 import { BooksitemComponent } from './pages/home/booksitem/booksitem.component';
+import { DiscountPipe } from './pipes/discount.pipe';
+import { FilterbookPipe } from './pipes/filterbook.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { BooksitemComponent } from './pages/home/booksitem/booksitem.component';
     ContactusComponent,
     NavbarComponent,
     DetailsComponent,
-    BooksitemComponent
+    BooksitemComponent,
+    DiscountPipe,
+    FilterbookPipe,
   ],
   imports: [
     BrowserModule,HttpClientModule,FormsModule,
