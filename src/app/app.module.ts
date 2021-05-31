@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DetailsComponent } from './pages/home/details/details.component';
 import { BooksitemComponent } from './pages/home/booksitem/booksitem.component';
 import { DiscountPipe } from './pipes/discount.pipe';
 import { FilterbookPipe } from './pipes/filterbook.pipe';
+import { CommentFormComponent } from './pages/home/comment-form/comment-form.component';
+import { CommentsComponent } from './pages/home/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +26,12 @@ import { FilterbookPipe } from './pipes/filterbook.pipe';
     BooksitemComponent,
     DiscountPipe,
     FilterbookPipe,
+    CommentFormComponent,
+    CommentsComponent,
   ],
   imports: [
     BrowserModule,HttpClientModule,FormsModule,
-    AppRoutingModule
+    AppRoutingModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

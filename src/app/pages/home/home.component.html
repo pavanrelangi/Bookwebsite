@@ -12,6 +12,7 @@
         <option>Moderate Price</option>
         <option>All</option>
     </select>
+    
 </div>
 
 <app-booksitem *ngFor="let x of books|filterbook:pricetype"  [book]="x"></app-booksitem> 
